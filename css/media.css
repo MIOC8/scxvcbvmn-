@@ -1,0 +1,15 @@
+@media (max-width: 520px) {
+    .welcome p {
+        font-size: 60px;
+    }
+}
+@media (max-width: 320px) {
+    .welcome p {
+        font-size: 52px;
+    }
+}
+@media (max-height: 540px) {
+    .button__input {
+        margin: 30px 0px;
+    }
+}

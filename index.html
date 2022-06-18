@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Prim</title>
+    <link rel="stylesheet" href="css/null.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/welcome.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+</head>
+
+<body>
+    <header>
+        <div id="preloader" class="preloader block-start">
+            <svg width="214" height="297" viewBox="0 0 214 297" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M52.3287 286C52.3287 286 11 126.059 52.3287 55.2268C93.6574 -15.6055 217.541 -0.500008 202.523 84.1583C187.506 168.817 11 126.059 11 126.059"
+                    stroke="black" stroke-width="20" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="block-start welcome">
+            <div class="container">
+                <div class="block__welcome">
+                    <p class="text">Welcome</p>
+                    <button class="welcome__button">Account</button>
+                </div>
+                <button id="skip" class="welcome__skip">skip</button>
+            </div>
+        </div>
+        <div class="block-start login">
+            <div class="container">
+                <button id="back" class="login__back">back</button>
+                <div class="text text__login"></div>
+                <div class="input-block__login">
+                    <div class="input__login-flex">
+                        <div class="change__login">
+                            <input class="input__login" type="text" value="name" />
+                            <input id="password" class="input__login" type="text" value="password" />
+                            <div class="checked__login">
+                                <input class="input-checked__login" type="checkbox" />
+                                <label for="">Remember</label>
+                            </div>
+                        </div>
+                        <button class="input-button__login">
+                            <div>Submit</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="header__main">
+                    <svg width="38" height="50" viewBox="0 0 38 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.28907 48C9.28907 48 2 21.3219 9.28907 9.5071C16.5781 -2.30769 38.4273 0.21189 35.7786 14.3329C33.13 28.4538 2 21.3219 2 21.3219"
+                            stroke="#393939" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                    <div class="header-user__main">
+
+                    </div>
+                </div>
+                <div class="block-search">
+                    <input type="text" value="search" class="input-search" />
+                    <svg width="23" height="23" stroke="#9e9e9e" viewBox="0 0 23 23" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.8 17.8L22 22M20.6 10.8C20.6 16.2124
+                            16.2124 20.6 10.8 20.6C5.38761 20.6 1 16.2124 1
+                            10.8C1 5.38761 5.38761 1 10.8 1C16.2124 1 20.6
+                            5.38761 20.6 10.8Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="menu-block__main">
+                    <div class="menu__main">
+                        <ul>
+                            <a class="menu-item__menu active"  href="#img1">
+                                <div>
+                                    <span class="menu-icon__main">
+                                        <ion-icon name="home-outline"></ion-icon>
+                                    </span>
+                                    <span class="menu-text__main">Home</span>
+                                </div>
+                            </a>
+                            <a class="menu-item__menu"  href="#img2">
+                                <div>
+                                    <span class="menu-icon__main">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                    <span class="menu-text__main">Orders</span>
+                                </div>
+                            </a>
+                            <a class="menu-item__menu"  href="#img3">
+                                <div>
+                                    <span class="menu-icon__main">
+                                        <ion-icon name="chatbubble-outline"></ion-icon>
+                                    </span>
+                                    <span class="menu-text__main">Contact</span>
+                                </div>
+                            </a>
+                            <a class="menu-item__menu" href="#img4">
+                                <div>
+                                    <span class="menu-icon__main">
+                                        <ion-icon name="settings-outline"></ion-icon>
+                                    </span>
+                                    <span class="menu-text__main">Settings</span>
+                                </div>
+                            </a>
+                            <div class="indicator"></div>
+                        </ul>
+                    </div>
+                </div>
+                <img id="img1" src="img/04_home_collections1.png" alt="">
+                <img id="img2" src="img/28_Light_home full page.png" alt="">
+                <img id="img3" src="img/FuniroLandingPage.jpg" alt="">
+                <img id="img4" src="img/FurnitureWeb.png" alt="">
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+        </div>
+    </header>
+    	<!-- Google CDN jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<!-- Page Scroll to id plugin -->
+	<script src="../jquery.malihu.PageScroll2id.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

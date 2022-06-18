@@ -1,0 +1,12 @@
+
+.preloader {
+    z-index: 100;
+}
+.preloader svg {
+    margin: auto;
+    width: 20%;
+    height: 80%;
+    stroke-dashoffset: 680;
+    stroke-dasharray: 680;
+    animation: svg__1 8s infinite ease-out;
+}
